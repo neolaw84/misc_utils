@@ -23,9 +23,9 @@ Secondly, for tmux, put .tmux.conf in ~/
  
 For the rest (non-tmux), source the following in this order at the end of '.zshrc'.
 
+1. auto-start-xwin.sh
 1. export-variables.sh
-2. auto-start-xwin.sh
-3. cyg-conda.sh
+2. cyg-conda.sh
 
 Finally, disable/enable exports and/or scripts as desired.
 
