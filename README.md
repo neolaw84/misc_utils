@@ -39,3 +39,5 @@ Don't forget to use complete path (because crontab)
 '# NOTE: LZO commands ... -----BEGIN CERTIFICATE-----')
 5. create a crontab entry with openvpn/auto-connect.sh (good to redirect
 and append output to a log file for review).  
+
+For ubuntu, copy the override.conf to /etc/systemd/system/apt-daily.timer.d/override.conf
