@@ -29,4 +29,13 @@ For the rest (non-tmux), source the following in this order at the end of '.zshr
 
 Finally, disable/enable exports and/or scripts as desired.
 
- 
+For openvpn auto-connection, follow the instructions below:
+
+1. modify the OPEN_VPN_DIR and OVPN_FILE_NAME in openvpn/auto-connect.sh. 
+Don't forget to use complete path (because crontab)
+2. please the .ovpn file you download in the openvpn directory
+3. put username/password in openvpn/pass.txt
+4. add the content of to-add-to-ovpn-file.txt to .ovpn file (before the
+'# NOTE: LZO commands ... -----BEGIN CERTIFICATE-----')
+5. create a crontab entry with openvpn/auto-connect.sh (good to redirect
+and append output to a log file for review).  
