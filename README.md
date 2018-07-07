@@ -41,3 +41,28 @@ Don't forget to use complete path (because crontab)
 and append output to a log file for review).  
 
 For ubuntu, copy the override.conf to /etc/systemd/system/apt-daily.timer.d/override.conf
+
+# Additional Misc Utilities
+
+1. mv_file_in_list.sh
+
+Script "mv_file_in_list.sh" reads a (text) file containing paths (absolute or relative) 
+of files and move them to the destination directory (maintaining the path structure). 
+
+Usage: ./mv_file_in_list.sh <list_file_path> <destination_dir>
+
+For example, if my_list_file.txt contains:
+
+/home/user/my_file_with_absolute_path.txt
+my_file_with_relative_path.txt
+my/second/file/with_relative_path.txt
+
+The invocation: ./mv_file_in_list.sh my_list_file.txt dest/
+
+will move these files to: 
+
+dest/home/user/my_file_with_absolute_path.txt,
+dest/my_file_with_relative_path.txt and
+dest/my/second/file/with_relative_path.txt
+
+
