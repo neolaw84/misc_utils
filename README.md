@@ -14,6 +14,7 @@ Before starting, install the followings:
 4. babun-docker -- https://github.com/tiangolo/babun-docker
 4. tmux -- pact install tmux
 5. x11 server -- pact install x11-server xinit
+6. run-git-agent (stolen from elsewhere) 
 
 # How to use
 
